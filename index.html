@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirigiendo con proxy</title>
-    <script>
-      window.location.replace("https://www.croxyproxy.com/?q=https%3A%2F%2Fshops.mystake.com");
-    </script>
-  </head>
-  <body>
-    <p>Redireccionando a través de proxy gratuito...</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acceso Prioritario 2025</title>
+  <meta name="description" content="Plataforma privada con acceso limitado. Conocé el sistema con bonificación exclusiva y soporte directo.">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #111;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+
+    #contenido {
+      display: none;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .bonus {
+      background: #dfffe1;
+      color: #15803d;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .info {
+      font-size: 1rem;
+      max-width: 80%;
+      margin-bottom: 2rem;
+    }
+
+    .boton {
+      background-color: #111;
+      color: #fff;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background-color: #333;
+    }
+
+    .trust {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .trust::before {
+      content: "✔️ ";
+    }
+
+    footer {
+      position: absolute;
+      bottom: 12px;
+      font-size: 0.7rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loader">🔐 Verificando acceso...</div>
+
+  <div id="contenido">
+    <h1>🚀 Acceso Exclusivo 2025</h1>
+    <h2>Te damos acceso anticipado a nuestra plataforma privada</h2>
+    <div class="bonus">🎁 ¡Bonificación inicial del 20% disponible!</div>
+    <p class="info">
+      Descubrí un sistema simple que ya están usando miles de personas desde su celular.<br>
+      No se necesita experiencia previa. Soporte personalizado incluido.
+    </p>
+    <button class="boton" onclick="redirigir()">Solicitar Acceso</button>
+    <div class="trust">Encriptado. Atención personalizada. Sin apps externas.</div>
+    <footer>© 2025 PlataformaPrivada</footer>
+  </div>
+
+  <script>
+    // Ocultar loader y mostrar contenido luego de 2 segundos
+    setTimeout(() => {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('contenido').style.display = 'flex';
+    }, 2000);
+
+    function redirigir() {
+      const a = '549261';
+      const b = '608';
+      const c = '7223';
+      const mensaje = 'Hola, vengo de la revista digital';
+
+      const link = `https://wa.me/${a + b + c}?text=` + encodeURIComponent(mensaje);
+      window.location.href = link;
+    }
+  </script>
+</body>
 </html>
